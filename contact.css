@@ -1,1 +1,118 @@
+@charset "UTF-8";
 
+form input{
+  background-color: #e6cd8c;
+  color: #8e775d;
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  box-shadow: 0 0 2px 4px #8e775d;
+}
+
+form textarea{
+  background-color: #e6cd8c;
+  color: #8e775d;
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  box-shadow: 0 0 2px 4px #8e775d;
+}
+
+.check-botton{
+  width: 80px;
+  height: 50px;
+  background-color: #e6cd8c;
+  box-shadow: 0 1px 0 4px #8e775d;
+  color: #8e775d;
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* -----------------------------------------アコーディオン---------------------------------------- */
+/* -----------------------------------------アコーディオン---------------------------------------- */
+#accordion{
+    width: 100%;
+    background-color: #e6cd8c;
+    padding: 50px 0;
+    border-radius: 10px 10px 10px 10px;
+  }
+  #accordion h2{
+    margin: auto;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+  #accordion ul{
+    width: 50%;
+    list-style: none;
+    margin:  45px auto 0 auto;
+  }
+  #accordion ul li{
+    margin-bottom: 30px;
+    padding: 35px;
+    border-radius: 16px;
+    background-color: #e6cd8c;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  .accordion_q{
+    position: relative;
+    padding-right: 35px;
+  }
+  .accordion_q:after {
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: solid 2px #333;
+    border-right: solid 2px #333;
+    transform: rotate(135deg);
+  }
+  .accordion_q.arrow:after {
+    transform: rotate(-45deg);
+    top: 45%;
+  }
+  .accordion_a{
+      color: #d9d8ce;
+    display: none;
+    margin-top: 35px;
+    padding: 15px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #8e775d;
+  }
+  @media (max-width: 768px){
+    #accordion{
+      padding: 55px 0;
+    }
+    #accordion h2{
+      font-size: 24px;
+    }
+    #accordion ul{
+      width: 80%;
+      margin:  35px auto 0 auto;
+    }
+    #accordion ul li{
+      margin-bottom: 20px;
+      padding: 25px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .accordion_a{
+      margin-top: 25px;
+      padding: 25px;
+    }
+  }
+  @media (max-width: 450px){
+    #accordion ul li{
+      padding: 22px;
+      font-size: 12px;
+    }
+  }
